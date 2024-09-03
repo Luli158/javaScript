@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Tareas Pendientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Simulador de Tareas Pendientes</h1>
+        
+        <form id="formularioTarea">
+            <input type="text" id="tituloTarea" placeholder="Título de la tarea" required>
+            <textarea id="descripcionTarea" placeholder="Descripción"></textarea>
+            <select id="prioridadTarea">
+                <option value="alta">Alta</option>
+                <option value="media">Media</option>
+                <option value="baja">Baja</option>
+            </select>
+            <button type="submit">Agregar Tarea</button>
+        </form>
+
+        <ul id="listaTareas"></ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

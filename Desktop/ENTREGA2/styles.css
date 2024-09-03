@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, select, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #00faed;
+    color: #111111;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #187a75;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #e9ecef;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    position: relative;
+}
+
+li.completada {
+    background: #d4edda;
+    text-decoration: line-through;
+}
+
+.prioridad-alta {
+    border-left: 5px solid #dc3545;
+}
+
+.prioridad-media {
+    border-left: 5px solid #ffc107;
+}
+
+.prioridad-baja {
+    border-left: 5px solid #28a745;
+}
+
+.acciones {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.acciones button {
+    margin-left: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
