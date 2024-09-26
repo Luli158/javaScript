@@ -1,0 +1,22 @@
+[
+  {
+    "titulo": "Ir al supermercado",
+    "descripcion": "Leche, galletitas, cereales, pan, jabon, detergente, arroz, fideos",
+    "prioridad": "media"
+  },
+  {
+    "titulo": "Estudiar JavaScript",
+    "descripcion": "Ver videos clase 6, hacer la entrega",
+    "prioridad": "alta"
+  },
+  {
+    "titulo": "Ir al gimnasio",
+    "descripcion": "Llevar muda de ropa",
+    "prioridad": "alta"
+  },
+  {
+    "titulo": "Pagar luz y gas",
+    "descripcion": "Ver ultimas facturas",
+    "prioridad": "alta"
+  }
+]
