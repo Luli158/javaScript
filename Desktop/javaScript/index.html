@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Tareas Pendientes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="contenedor">
+        <!-- Tareas predeterminadas -->
+        <div class="tareas-predeterminadas">
+            <h2>Tareas diarias</h2>
+            <ul id="tareasPredeterminadas"></ul>
+        </div>
+
+        <!-- Lista de tareas -->
+        <div class="tareas">
+            <h1>TAREAS PENDIENTES</h1>
+
+            <!-- Agregar tareas -->
+            <form id="formularioTarea">
+                <input type="text" id="tituloTarea" placeholder="Título de la tarea" required>
+                <textarea id="descripcionTarea" placeholder="Descripción"></textarea>
+                <select id="prioridadTarea">
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+                <button type="submit" class="agregar">Agregar Tarea</button>
+            </form>
+
+            <!-- Lista de tareas -->
+            <ul id="listaTareas"></ul>
+        </div>
+
+        <!-- Papelera-->
+        <div class="papelera">
+            <h2>Papelera de reciclaje</h2>
+            <ul id="listaPapelera"></ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
