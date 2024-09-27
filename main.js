@@ -87,7 +87,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Completar una tarea
     const completarTarea = (indice) => {
-        Swal.fire('¡Tarea completada!', `Has completado la tarea: ${tareas[indice].titulo}`, 'success');
+        Swal.fire({     
+            title: 'Tarea completada!',
+            text: `Has completado la tarea: ${tareas[indice].titulo}`,
+            icon: 'success',
+            confirmButtonText: 'OK',
+            customClass: {
+            confirmButton: 'agregar'
+            }
+        }),
         tareas.splice(indice, 1);
         guardarTareas();
         agregarTareas();
